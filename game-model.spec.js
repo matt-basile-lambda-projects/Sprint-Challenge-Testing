@@ -7,7 +7,7 @@ describe('API TESTING', () => {
        });
     describe('ADD() /POST', () => {
         it('Adding one Game full Content', async() => {
-            const game = await Games.add({title: 'Battleship', genre: "Arcade", releaseYear: 1969})  
+            const game = await Games.add({title: 'Battleship', genre: "Arcade", releaseYear: 1969});
             expect(game.title).toBe('Battleship')
         });
         it('Adding a Game with No Year', async() => {
