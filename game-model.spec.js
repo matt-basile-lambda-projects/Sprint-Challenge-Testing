@@ -5,7 +5,7 @@ describe('API TESTING', () => {
     afterAll(async ()=>{
         await db('games').truncate();
        });
-    describe('ADD() ', () => {
+    describe('ADD() /POST', () => {
         it('Adding one Game full Content', async() => {
             const game = await Games.add({title: 'Battleship', genre: "Arcade", releaseYear: 1969})  
             expect(game.title).toBe('Battleship')
@@ -23,4 +23,4 @@ describe('API TESTING', () => {
         
     });
    
-    });
+});
