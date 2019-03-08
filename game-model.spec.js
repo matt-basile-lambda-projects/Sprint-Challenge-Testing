@@ -22,5 +22,9 @@ describe('API TESTING', () => {
         });
         
     });
-   
+   describe('GET() ', () => {
+       it('returns an array', async() => {
+           
+       });
+   });
 });
